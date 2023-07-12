@@ -7,7 +7,7 @@ class SeriesController < ApplicationController
     @serie = Serie.new(serie_params)
     pp @serie
     if @serie.save
-      redirect_to movies_path, notice: 'La serie se ha creado correctamente.'
+      redirect_to '/series/index', notice: 'La serie se ha creado correctamente.'
     else
       render :new
     end

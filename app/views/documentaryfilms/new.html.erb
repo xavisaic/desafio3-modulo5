@@ -1,2 +1,24 @@
 <h1>Documentaryfilms#new</h1>
 <p>Find me in app/views/documentaryfilms/new.html.erb</p>
+
+
+<%= form_with model: @documentary_film, url: '/documentaryfilms/create'  do |form| %>
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :synopsis %>
+      <%= form.text_area :synopsis %>
+    </div>
+
+    <div class="field">
+      <%= form.label :director %>
+      <%= form.text_field :director %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+<% end %>

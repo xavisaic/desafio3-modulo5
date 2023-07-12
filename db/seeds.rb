@@ -17,3 +17,11 @@ require 'faker'
 10.times do |i|
     Serie.create(name: Faker::Books::CultureSeries.civ, director:Faker::Artist.name , synopsis: Faker::Lorem.sentence(word_count: 20) )
 end
+
+10.times do |i|
+    Movie.create(name: Faker::Books::CultureSeries.civ, director:Faker::Artist.name , synopsis: Faker::Lorem.sentence(word_count: 20) )
+end
+
+10.times do |i|
+    DocumentaryFilm.create(name: Faker::Books::CultureSeries.civ, director:Faker::Artist.name , synopsis: Faker::Lorem.sentence(word_count: 20) )
+end
